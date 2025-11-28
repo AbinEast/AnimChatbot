@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mei Chat - AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Load Live2D and PixiJS -->
+    <script src="https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dylanNew/live2d/webgl/Live2D/lib/live2d.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@7.x/dist/pixi.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/RaSan147/pixi-live2d-display@v0.5.0-ls-8/dist/index.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Character Section -->
+        <div class="character-container">
+            <div class="character-card">
+                <div id="canvas_container">
+                    <canvas id="canvas"></canvas>
+                </div>
+                <div class="character-info">
+                    <div class="character-name">Mei</div>
+                    <div class="character-status">
+                        <span class="status-dot"></span>
+                        <span>Online & Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>💬 Chat with Mei</h1>
+            </div>
+            <div class="chat-body">
+                <ul class="message-list"></ul>
+            </div>
+            <div class="chat-input-container">
+                <div class="message-input">
+                    <input type="text" placeholder="Type your message here..." />
+                    <button type="button" class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main application script -->
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+</html>
