@@ -81,4 +81,4 @@ python app.py
 - Ensure Voicevox is running in the background.
 - Open the web page.
 - Type a message in the input box (English).
-- The character will reply with Voice, text, and a matching motion
+- The character will reply with Voice, text, and motion
