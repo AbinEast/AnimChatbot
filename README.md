@@ -24,7 +24,6 @@ A web-based interactive chatbot featuring a Live2D avatar that responds with dyn
 ```text
 Bot_project/
 ├── app.py                  # Main Flask application
-├── chat_messages.db        # SQLite database for chat history
 ├── requirements.txt        # Python dependencies
 ├── templates/
 │   └── index.html          # Main frontend interface
